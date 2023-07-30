@@ -45,3 +45,11 @@
 .suggestion_avatar{
     margin-right: 10px;
 }
+
+
+@media(max-width:1017px){
+  .suggestions{
+    display: none;
+  }
+
+}

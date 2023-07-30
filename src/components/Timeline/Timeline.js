@@ -3,6 +3,7 @@ import "./Timeline.css";
 import { Col, Container, Row } from "react-bootstrap";
 import Suggestion from "./Suggestions/Suggestion";
 import Posts from "./Posts/Posts";
+import Stories from "./Stories/Stories";
 
 function Timeline() {
     const [posts, setPosts] = useState([
@@ -25,23 +26,28 @@ function Timeline() {
         postImage:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png",
         likes: 140,
-        timestamp: "2d",
+        timestamp: " 20 min",
       },
       {
         user: "luke_simon003",
         postImage:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGCAaQ5u1TMTij5ELPWi5-VPtlSqELw-R6lj0EpYmNcGt56kOQaCokzS0IK81MOSphlkw&usqp=CAU",
+          "https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/3.jpg",
         likes: 14,
         timestamp: "2d",
       },
     ]);
   return (
     <div className="timelineview">
+      <Row className="stories">
+        {/* <Stories/> */}
+
+      </Row>
+
       <Row className="timeline">
         <Col className="left_timeline">
           <Container fluid className="timeline_posts">
-                      {posts.map((post) => (
-                          <Posts item={post} />
+            {posts.map((post) => (
+              <Posts item={post} />
             ))}
           </Container>
         </Col>

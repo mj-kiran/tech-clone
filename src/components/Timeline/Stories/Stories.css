@@ -1,0 +1,14 @@
+.story_header{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin:5px 10px 5px 10px;
+}
+/* .single_story{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+} */

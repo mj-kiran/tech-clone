@@ -14,12 +14,19 @@
     flex-direction: row;
     align-items: center;
     font-weight: bolder;
+    
    
+}
+.dot ,.user{
+     margin-left: 7px;
+     color: white;
 }
 .post_auth_header>span{
     color: gray;
     font-size: 15px;
+    margin-left: 7px;
 }
+
 .post_image>img{
     width: 100%;
     border-radius: 6px;
@@ -46,7 +53,9 @@ display: flex;
     padding: 7px;
     font-size: 30px;
 }
-
+.likes{
+    margin-left: 7px;
+}
 
 @media (max-width: 860px) {
     .post{
@@ -64,12 +73,33 @@ display: flex;
 }
 @media (max-width: 710px) {
     .post{
+    width: 350px;
+  margin: 30px 40px 50px 40px;
+
+}
+.post_auth_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 400;
+   
+}
+.post_auth_header>span{
+    color: gray;
+    font-size: 14px;
+}
+    
+}
+
+@media (max-width: 610px) {
+    .post{
     width: 300px;
   margin: 30px 40px 50px 40px;
 }
     
 }
-@media (max-width: 610px) {
+
+@media (max-width: 420px) {
     .post{
     width: 250px;
   margin: 30px 40px 50px 40px;

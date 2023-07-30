@@ -13,7 +13,9 @@ function Posts({item}) {
       <Row className="post_header">
         <Col className="post_auth_header">
                   <Avatar>{item.user.charAt(0).toUpperCase() }</Avatar>
-                  {item.user} • <span>{item.timestamp}</span>
+          <div className='user'>{item.user}</div>
+          <div className='dot'> • </div>
+          <span>{item.timestamp}</span>
         </Col>
         <Col>
           <MoreHorizIcon />
@@ -42,7 +44,7 @@ function Posts({item}) {
             <BookmarkBorderIcon className="postIcon" />
           </Col>
         </Row>
-        {item.likes}
+        <span className='likes'>{item.likes} likes</span>
       </Row>
     </Container>
   );
